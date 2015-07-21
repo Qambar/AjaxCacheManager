@@ -20,6 +20,7 @@ or using package.json
   }
 }
 ```
+Then do `npm install`
 
 Usage:
 -----
