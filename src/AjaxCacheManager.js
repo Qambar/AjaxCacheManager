@@ -2,11 +2,11 @@ define(['jquery'], function ($) {
 
     "use strict";
 
-    var CacheManager = function (options) {
+    var AjaxCacheManager = function (options) {
         this.setOptions(options);
     };
 
-    CacheManager.prototype = {
+    AjaxCacheManager.prototype = {
         options : {
             cache_container: '.js-dynamic-container',
         },
@@ -43,5 +43,5 @@ define(['jquery'], function ($) {
         }
     };
 
-    return CacheManager;
+    return AjaxCacheManager;
 });

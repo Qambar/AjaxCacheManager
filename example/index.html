@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example - Ajax Cache Manager</title>
+</head>
+
+<body>
+
+    <div id="my-container">Placeholder</div>
+
+    <button class="page1">Load Page1</button>
+    <button class="page2">Load Page2</button>
+    <button class="page3">Load Page3</button>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.19/require.js"></script>
+    
+    <script type="text/javascript">
+    <!--
+        requirejs.config({
+            "baseUrl": "../",
+            "paths": {
+              "AjaxCacheManager": "src/AjaxCacheManager",
+              "jquery": "https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min"
+            }
+        });
+
+        require(['jquery', 'AjaxCacheManager'], function ($, AjaxCacheManager) {
+            var cacheManager = new AjaxCacheManager({
+                'cache_container' : '#my-container' 
+            });
+
+            $('.page1').click(function() {
+                cacheManager.load("page1.html");    
+            });
+
+            $('.page2').click(function() {
+                cacheManager.load("page2.html");    
+            });
+            
+            $('.page3').click(function() {
+                cacheManager.load("page3.html");    
+            });
+        });
+        
+    -->
+    </script>
+</body>
+
+</html>
