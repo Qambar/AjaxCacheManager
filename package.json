@@ -1,0 +1,31 @@
+{
+  "name": "ajaxcachemanager",
+  "version": "0.1.0",
+  "description": "Module to cache repeated calls to server for fetching HTML. Perfect for paginations.",
+  "main": "src/AjaxCacheManager.js",
+  "dependencies": {
+        "amdefine": ">=0.1.0"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qambar/AjaxCacheManager.git"
+  },
+  "keywords": [
+    "ajax",
+    "cache",
+    "cachemanager",
+    "javascript"
+  ],
+  "author": "Qambar Raza <qambar@ymail.com> (http://www.qambarraza.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Qambar/AjaxCacheManager/issues"
+  },
+  "homepage": "https://github.com/Qambar/AjaxCacheManager#readme"
+}
