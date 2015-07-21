@@ -8,7 +8,18 @@ Installation:
 ```
 npm install ajaxcachemanager
 ```
+or using package.json
 
+```
+{
+  "name": "my-app",
+  ..
+  "devDependencies": {
+    ..
+    "ajaxcachemanager": "0.2.1"
+  }
+}
+```
 
 Usage:
 -----
