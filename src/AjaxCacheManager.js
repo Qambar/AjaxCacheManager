@@ -8,7 +8,7 @@ define(['jquery'], function ($) {
 
     CacheManager.prototype = {
         options : {
-            cache_container: 'js-dynamic-container',
+            cache_container: '.js-dynamic-container',
         },
         setOptions : function (options) {
             this.options = $.extend({}, this.options, options);
@@ -20,13 +20,13 @@ define(['jquery'], function ($) {
         load: function(url) {
             var _self = this;
             if (_self.get(url) === null) {
-                $('.' + _self.options.cache_container).html("Loading...");
+                $(_self.options.cache_container).html("Loading...");
                 $.get(url, function(data) {
                     _self.cache(url, data);
-                    $('.' + _self.options.cache_container).html(_self.get(url));
+                    $(_self.options.cache_container).html(_self.get(url));
                 });
             } else {
-                $('.' + _self.options.cache_container).html(_self.get(url));
+                $(_self.options.cache_container).html(_self.get(url));
             }
         },
         cache: function (url, html) {
