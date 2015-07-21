@@ -1,4 +1,4 @@
-# AjaxCacheManager v0.1.0
+# AjaxCacheManager v0.2.0
 
 Plugin to cache repeated calls to server for fetching HTML. Perfect for paginations.
 
