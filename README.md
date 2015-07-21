@@ -14,7 +14,9 @@ Usage:
 -----
 
 ```
-var cacheManager = new CacheManager({'cache_container' : '#my-container' });
+var cacheManager = new AjaxCacheManager({
+  'cache_container' : '#my-container' 
+});
 
 //To load the url in a particular div
 cacheManager.load("http://www.google.com");
@@ -27,7 +29,9 @@ The best use case scenario is the pagination, where you want to go from page 1->
 
 
 ```
-var cacheManager = new CacheManager({'cache_container' : '#my-container' });
+var cacheManager = new AjaxCacheManager({
+  'cache_container' : '#my-container' 
+});
 
 //First time calling will request pages from server
 cacheManager.load("http://www.google.com?pg=1");
