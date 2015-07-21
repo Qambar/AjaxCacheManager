@@ -1,6 +1,6 @@
 # AjaxCacheManager v0.1
 
-This is a plugin to cache the ajax requests to urls and loading the data into particular git. This is dependent upon jQuery.
+Plugin to cache repeated calls to server for fetching HTML. Perfect for paginations.
 
 Usage:
 -----
