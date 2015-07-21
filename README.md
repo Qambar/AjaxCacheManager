@@ -1,6 +1,14 @@
-# AjaxCacheManager v0.1
+# AjaxCacheManager v0.1.0
 
 Plugin to cache repeated calls to server for fetching HTML. Perfect for paginations.
+
+Installation:
+------------
+
+```
+npm install ajaxcachemanager
+```
+
 
 Usage:
 -----
