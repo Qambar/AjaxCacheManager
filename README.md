@@ -55,4 +55,40 @@ cacheManager.load("http://www.google.com?pg=1");
 
 ```
 
+Change Container Selector
+-------------------------
+You can change or set container for content load at anytime using the changeContainer method provided.
+
+```
+var cacheManager = new AjaxCacheManager();
+
+cacheManager.changeContainer('#my-container2');
+
+```
+
+Callbacks
+---------
+
+You can pass a callback as a 2nd parameter of load and when the content will load it will call the callback with the loaded html.
+
+Define your callback :
+
+```
+var mycallback = function(html) {
+    alert(html);
+};
+
+```
+Then pass it as a 2nd parameter to load
+
+```
+var cacheManager = new AjaxCacheManager({
+  'cache_container' : '#my-container' 
+});
+
+//First time calling will request pages from server
+cacheManager.load("http://www.google.com?pg=1", mycallback);
+
+```
+
 Note: it uses the url as a key for html cache.
