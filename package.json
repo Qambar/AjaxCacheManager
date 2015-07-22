@@ -4,6 +4,7 @@
   "description": "Module to cache repeated calls to server for fetching HTML. Perfect for paginations.",
   "main": "src/AjaxCacheManager.js",
   "dependencies": {
+        "jQuery": ">= 1.7.4",
         "amdefine": ">=0.1.0"
   },
   "directories": {
