@@ -1,4 +1,4 @@
-# AjaxCacheManager v0.1.0
+# AjaxCacheManager v0.2.0
 
 Plugin to cache repeated calls to server for fetching HTML. Perfect for paginations.
 
@@ -8,13 +8,27 @@ Installation:
 ```
 npm install ajaxcachemanager
 ```
+or using package.json
 
+```
+{
+  "name": "my-app",
+  ..
+  "devDependencies": {
+    ..
+    "ajaxcachemanager": "0.2.1"
+  }
+}
+```
+Then do `npm install`
 
 Usage:
 -----
 
 ```
-var cacheManager = new CacheManager({'cache_container' : '#my-container' });
+var cacheManager = new AjaxCacheManager({
+  'cache_container' : '#my-container' 
+});
 
 //To load the url in a particular div
 cacheManager.load("http://www.google.com");
@@ -27,7 +41,9 @@ The best use case scenario is the pagination, where you want to go from page 1->
 
 
 ```
-var cacheManager = new CacheManager({'cache_container' : '#my-container' });
+var cacheManager = new AjaxCacheManager({
+  'cache_container' : '#my-container' 
+});
 
 //First time calling will request pages from server
 cacheManager.load("http://www.google.com?pg=1");
