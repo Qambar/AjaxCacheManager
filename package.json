@@ -1,6 +1,6 @@
 {
   "name": "ajaxcachemanager",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Module to cache repeated calls to server for fetching HTML. Perfect for paginations.",
   "main": "src/AjaxCacheManager.js",
   "dependencies": {
