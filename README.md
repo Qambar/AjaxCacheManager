@@ -1,4 +1,4 @@
-# AjaxCacheManager v0.3.2
+# AjaxCacheManager v0.3.3
 
 Plugin to cache repeated calls to server for fetching HTML. Perfect for paginations.
 
@@ -16,7 +16,7 @@ or using package.json
   ..
   "devDependencies": {
     ..
-    "ajaxcachemanager": "0.2.1"
+    "ajaxcachemanager": "0.3.3"
   }
 }
 ```
@@ -54,6 +54,15 @@ cacheManager.load("http://www.google.com?pg=3");
 cacheManager.load("http://www.google.com?pg=1");
 
 ```
+
+Clear Cache
+-----------
+To clear the cache you can call the `clear()` method on your object
+
+```
+cacheManager.clear();
+```
+
 
 Change Container Selector
 -------------------------

@@ -9,8 +9,10 @@
     <div id="my-container">Placeholder</div>
 
     <button class="page1">Load Page1</button>
-    <button class="page2">Load Page2</button>
     <button class="page3">Load Page3</button>
+    <button class="page2">Load Page2</button>
+
+    <button class="clear">Clear Cache</button>
 
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.19/require.js"></script>
@@ -20,7 +22,7 @@
         requirejs.config({
             "baseUrl": "../",
             "paths": {
-              "AjaxCacheManager": "src/AjaxCacheManager",
+              "AjaxCacheManager": "lib/AjaxCacheManager",
               "jquery": "https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min"
             }
         });
@@ -40,6 +42,10 @@
             
             $('.page3').click(function() {
                 cacheManager.load("page3.html");    
+            });
+
+            $('.clear').click(function() {
+                cacheManager.clear();
             });
         });
         
